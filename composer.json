@@ -2,7 +2,7 @@
   "name": "flavioheleno/bigheads-php",
   "description": "Easily create characters for your projects (PHP Library for bigheads.io)",
   "type": "library",
-  "keywords": [""],
+  "keywords": ["bigheads", "bigheads.io", "avatars"],
   "homepage": "https://github.com/flavioheleno/bigheads-php",
   "license": "mit",
   "authors": [
