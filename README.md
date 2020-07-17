@@ -1,4 +1,4 @@
-# bigheads-php [![Build Status](https://travis-ci.com/flavioheleno/bigheads-php.svg?branch=master)](https://travis-ci.com/flavioheleno/bigheads-php) [![Maintainability](https://api.codeclimate.com/v1/badges/d778eb1514509d581876/maintainability)](https://codeclimate.com/github/flavioheleno/bigheads-php/maintainability)
+# bigheads-php [![Build Status](https://travis-ci.com/flavioheleno/bigheads-php.svg?branch=master)](https://travis-ci.com/flavioheleno/bigheads-php) [![Maintainability](https://api.codeclimate.com/v1/badges/14b99f8c558560f99abb/maintainability)](https://codeclimate.com/github/flavioheleno/bigheads-php/maintainability)
 Easily generate avatars for your projects with [Big Heads](https://bigheads.io).
 
 This is a PHP Library that helps you build Big Heads (original project: [RobertBroersma/bigheads](https://github.com/RobertBroersma/bigheads)).
