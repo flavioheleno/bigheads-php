@@ -26,9 +26,7 @@
   },
   "require": {
     "php": "^7.4",
-    "hirak/prestissimo": "^0.3",
-    "myclabs/php-enum": "^1.7",
-    "roave/security-advisories": "dev-master"
+    "myclabs/php-enum": "^1.7"
   },
   "require-dev": {
     "infection/infection": "^0.16.4",
