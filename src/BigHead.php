@@ -10,6 +10,7 @@ use BigHeads\Properties\Clothing;
 use BigHeads\Properties\ClothingColor;
 use BigHeads\Properties\Eyebrows;
 use BigHeads\Properties\Eyes;
+use BigHeads\Properties\FaceMaskColor;
 use BigHeads\Properties\FacialHair;
 use BigHeads\Properties\Graphic;
 use BigHeads\Properties\Hair;
@@ -56,6 +57,14 @@ final class BigHead implements Serializable {
    * @var null|\BigHeads\Properties\Eyes
    */
   private ?Eyes $eyes = null;
+  /**
+   * @var null|bool
+   */
+  private ?bool $faceMask = null;
+  /**
+   * @var null|\BigHeads\Properties\FaceMaskColor
+   */
+  private ?FaceMask $faceMaskColor = null;
   /**
    * @var null|\BigHeads\Properties\FacialHair
    */
@@ -151,6 +160,12 @@ final class BigHead implements Serializable {
     return $this;
   }
 
+  public function setFaceMaskColor(FaceMaskColor $faceMaskColor): self {
+    $this->faceMaskColor = $faceMaskColor;
+
+    return $this;
+  }
+
   public function setFacialHair(FacialHair $facialHair): self {
     $this->facialHair = $facialHair;
 
@@ -207,6 +222,18 @@ final class BigHead implements Serializable {
 
   public function setSkinTone(SkinTone $skinTone): self {
     $this->skinTone = $skinTone;
+
+    return $this;
+  }
+
+  public function withFaceMask(): self {
+    $this->faceMask = true;
+
+    return $this;
+  }
+
+  public function withoutFaceMask(): self {
+    $this->faceMask = false;
 
     return $this;
   }
@@ -271,6 +298,8 @@ final class BigHead implements Serializable {
       'clothingColor' => $this->clothingColor,
       'eyebrows'      => $this->eyebrows,
       'eyes'          => $this->eyes,
+      'faceMask'      => $this->faceMask,
+      'faceMaskColor' => $this->faceMaskColor,
       'facialHair'    => $this->facialHair,
       'graphic'       => $this->graphic,
       'hair'          => $this->hair,
@@ -298,6 +327,8 @@ final class BigHead implements Serializable {
         $this->clothingColor,
         $this->eyebrows,
         $this->eyes,
+        $this->faceMask,
+        $this->faceMaskColor,
         $this->facialHair,
         $this->graphic,
         $this->hair,
@@ -323,6 +354,8 @@ final class BigHead implements Serializable {
       $this->clothingColor,
       $this->eyebrows,
       $this->eyes,
+      $this->faceMask,
+      $this->faceMaskColor,
       $this->facialHair,
       $this->graphic,
       $this->hair,

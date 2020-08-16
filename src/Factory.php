@@ -10,6 +10,7 @@ use BigHeads\Properties\Clothing;
 use BigHeads\Properties\ClothingColor;
 use BigHeads\Properties\Eyebrows;
 use BigHeads\Properties\Eyes;
+use BigHeads\Properties\FaceMaskColor;
 use BigHeads\Properties\FacialHair;
 use BigHeads\Properties\Graphic;
 use BigHeads\Properties\Hair;
@@ -62,6 +63,14 @@ final class Factory {
 
     if (self::randEnabled()) {
       $bigHead->setEyes(self::randSelect(Eyes::values()));
+    }
+
+    if (self::randEnabled()) {
+      $bigHead->withoutFaceMask();
+      if (self::randEnabled()) {
+        $bigHead->withFaceMask();
+        $bigHead->setFaceMaskColor(self::randSelect(FaceMaskColor::values()));
+      }
     }
 
     if (self::randEnabled()) {

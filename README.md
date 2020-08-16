@@ -46,6 +46,8 @@ Name                                              | Type    | Default
 [ClothingColor](src/Properties/ClothingColor.php) | Enum    | `null`
 [Eyebrows](src/Properties/Eyebrows.php)           | Enum    | `null`
 [Eyes](src/Properties/Eyes.php)                   | Enum    | `null`
+FaceMask                                          | Boolean | `false`
+[FaceMaskColor](src/Properties/FaceMaskColor.php) | Enum    | `null`
 [FacialHair](src/Properties/FacialHair.php)       | Enum    | `null`
 [Graphic](src/Properties/Graphic.php)             | Enum    | `null`
 [Hair](src/Properties/Hair.php)                   | Enum    | `null`
