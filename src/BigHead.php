@@ -64,7 +64,7 @@ final class BigHead implements Serializable {
   /**
    * @var null|\BigHeads\Properties\FaceMaskColor
    */
-  private ?FaceMask $faceMaskColor = null;
+  private ?FaceMaskColor $faceMaskColor = null;
   /**
    * @var null|\BigHeads\Properties\FacialHair
    */
